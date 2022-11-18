@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.gif {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    width: 100vw;
+    flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 2%;
+    background-image: url("https://img-19.commentcamarche.com/lNSQ-55i97NvVxnZT3ZaKHrz4_Q=/1500x/smart/38fe884a883d4c9faa429011d610f1d1/ccmcms-droit-finances/22072649.jpg");
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sitehead {
+    position: relative;
+    font-size: xx-large;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.construction {
+    font-size: xx-large;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.workimage {
+    width: 30%;
+}
+
+@media screen and (max-width:468px) {
+    .gif {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .workimage {
+        width: 100%;
+    }
 }
