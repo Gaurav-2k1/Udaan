@@ -1,0 +1,35 @@
+.contact {
+    padding: 5% 7%;
+    display: flex;
+    flex-direction: row;
+    width: 98.5vw;
+    height: 80vh;
+    background-color: rgba(77, 166, 244, 0.42);
+}
+
+.bg {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bg img {
+    width: 60%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:768px) {
+    .contact{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .bg{
+        width: 100%;
+
+    }
+    .bg img{
+        width: 100%;
+    }
+}

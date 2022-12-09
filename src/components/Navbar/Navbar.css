@@ -1,0 +1,120 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  z-index: 10000;
+  background-color: white;
+  line-height: 80px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 1.3rem;
+}
+
+.logodiv {
+  background-image: url("../../assets/hero/cloud.png");
+  height: 80px;
+  transform: rotate(180deg);
+  width: 200px;
+  top: 2.5rem;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0) invert(1);
+
+}
+
+.navmenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5;
+}
+.logoimage {
+  position: absolute;
+  top: 1rem;
+  transform: translateX(0);
+  object-fit: cover;
+  height: 100px;
+  z-index: 100;
+
+}
+
+.nav__item a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #0a2b1e;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__item a:hover {
+  color: #17bf9e;
+}
+
+.nav__right p {
+  font-weight: 500;
+  color: #0a2b1e;
+  font-size: 1.1rem;
+}
+
+.nav__right p i {
+  font-size: 1.3rem;
+}
+
+.mobile__menu span i {
+  font-size: 1.4rem;
+  color: #0a2b1e;
+  cursor: pointer;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+   .header{
+    width: 100vw;
+   }
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2b1ec2;
+    z-index: 99;
+    display: none;
+  }
+
+  .nav__list {
+    position: absolute;
+    background: #fff;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    padding-top: 80px;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .nav__right {
+    display: none;
+  }
+
+  .active__menu {
+    display: block;
+  }
+}

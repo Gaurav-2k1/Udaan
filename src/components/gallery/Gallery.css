@@ -1,0 +1,35 @@
+.gallery {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.sliderimg {
+    padding: 3rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.classcon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* .gal {
+    background-color: #a5c9e7;
+} */
+
+@media screen and (max-width:768px) {
+    .classcon{
+        padding: 0 20px;
+    }
+    .classcon h2{
+        font-size: 2rem;
+    }
+    .sliderimg{
+        padding: 5px;
+        margin:  0 10px;
+        object-fit: contain;
+    }
+}

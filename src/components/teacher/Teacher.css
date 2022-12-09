@@ -1,0 +1,105 @@
+.teacher {
+    margin-top:20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+}
+
+.teacherrow {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.teacherbox {
+    margin: 2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.teacherbox img {
+    padding: 10px;
+    background-color: #fff;
+    border: 2px dashed rgb(244, 35, 164);
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: -10rem;
+}
+
+.teacherbox h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.teacherbox span {
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+}
+
+.cloudimage {
+    background-image: url("../../assets/teacher/teacher.png");
+    width: 100%;
+    
+    height:20rem;
+    position: absolute;
+    top: -17rem;
+    left: 0;
+    background-position: top;
+    background-size: cover;
+    z-index: -100;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cloud {
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    margin-top: 70px;
+    width: 100%;
+    height: 120px;
+    border-radius: 100px 100px 0 0;
+}
+
+.cloud::after,
+.cloud::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud::after {
+    width: 50%;
+    height: 100px;
+    top: -150px;
+    left: 50px;
+}
+
+.cloud::before {
+    width: 30%;
+    height: 180px;
+    top: -100px;
+    left: 130px;
+    border-radius: 50%;
+}
