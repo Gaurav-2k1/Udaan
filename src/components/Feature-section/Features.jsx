@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
+import { Container } from "reactstrap";
 import "./features.css";
 import img from '../../assets/teacher.jpg'
 import o from '../../assets/o.png';
