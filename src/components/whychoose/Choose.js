@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from 'reactstrap'
 import './choose.css';
-import chooseImg from '../../assets/teacher.jpg'
 import ReactPlayer from "react-player";
 
 const Choose = () => {
-    const [showVideo, setShowVideo] = useState(false);
 
     return (
         <section className="chooseus" id="activities">
