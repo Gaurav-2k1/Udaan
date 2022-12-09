@@ -33,9 +33,8 @@
   width: 50%;
 }
 
-.choose__img img {
-  border-radius: 15px;
-  object-fit: cover;
+.choose__img{
+  width: 80%;
 }
 
 .choose__content {

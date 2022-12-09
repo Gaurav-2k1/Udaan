@@ -6,7 +6,7 @@ import './App.css'
 import About from './components/about/About';
 import Hero from './components/hero/Hero';
 import Navbar from './components/Navbar/Navbar';
-// import Teacher from './components/teacher/Teacher';
+import Teacher from './components/teacher/Teacher';
 import Choose from './components/whychoose/Choose';
 import Features from './components/Feature-section/Features';
 import Gallery from './components/gallery/Gallery';
@@ -18,7 +18,7 @@ const App = () => {
             <Navbar />
             <Hero />
             <About />
-            {/* <Teacher /> */}
+            <Teacher />
             <Choose />
             <Features />
             <Gallery />
