@@ -3,7 +3,7 @@ import "./Teacher.css"
 import teacher from "../../assets/teacher.jpg"
 const Teacher = () => {
     return (
-        <section className='teacher'>
+        <section className='teacher' id='teachers'>
             <div className='cloudimage'>
                 <h1>Meet Our Teachers</h1>
             </div>
